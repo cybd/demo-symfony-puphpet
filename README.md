@@ -59,3 +59,5 @@ SQLite
 **Happy coding!**
 
 *Created with Love using [puPHPet](https://puphpet.com/). Tested on Mac and Windows.*
+
+*Inspired by [Evgeniy Snetilov](https://github.com/evgeniysnetilov)*
