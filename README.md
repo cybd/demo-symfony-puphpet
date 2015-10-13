@@ -12,13 +12,13 @@ Download and install:
 Clone this repo into local empty folder:
 
 ```
-$ git clone https://github.com/cybd/demo-symfony-puphpet .
+$ git clone https://github.com/cybd/demo-symfony-puphpet demoApp
 ```
 
 Type vagrant up and wait for a while (i.e. make cup of coffee):
 
 ```
-$ vagrant up
+$ cd demoApp/ && vagrant up
 ```
 
 Add line into your host file
