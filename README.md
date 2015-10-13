@@ -2,7 +2,7 @@
 
 Ready-made development environment for [Symfony demo application](http://symfony.com/blog/introducing-the-symfony-demo-application). Just clone and vagrant up ^)
 
-It is a good way (I think) to start learning [Symfony framework](http://symfony.com/doc/current/book/index.html).
+It is a good way (I think) to [start learning Symfony framework](http://symfony.com/doc/current/book/page_creation.html).
 
 Download and install:
 
