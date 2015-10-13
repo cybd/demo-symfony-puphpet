@@ -1,2 +1,2 @@
 #!/bin/bash
-sed -i -- '/s/Ondřej Surý/Ondrej Sury/g' /etc/init/php5-fpm.conf
+sed -i '/ondrej@debian.org/c\author "Ondrej Sury <ondrej@debian.org>"'
