@@ -25,7 +25,7 @@ Add line into your host file
 
 
 ```
-192.168.33.2 demo.sf.local
+192.168.56.101 demo.sf.local
 ```
 
 Go to http://demo.sf.local in your browser
