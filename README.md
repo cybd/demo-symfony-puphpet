@@ -12,16 +12,12 @@ Download and install:
 Clone this repo into local empty folder:
 
 ```
-#!bash
-
 $ git clone https://github.com/cybd/demo-symfony-puphpet .
 ```
 
 Type vagrant up and wait for a while (i.e. make cup of coffee):
 
 ```
-#!bash
-
 $ vagrant up
 ```
 
@@ -29,8 +25,6 @@ Add line into your host file
 
 
 ```
-#!text
-
 192.168.33.2 demo.sf.local
 ```
 
@@ -43,8 +37,6 @@ Install NFS Vagrant plugin if you want to use NFS on Windows. Just type in conso
 
 
 ```
-#!bash
-
 $ vagrant plugin install vagrant-winnfsd
 ```
 
