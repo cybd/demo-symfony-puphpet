@@ -15,7 +15,7 @@ Clone this repo:
 $ git clone https://github.com/cybd/demo-symfony-puphpet demoApp
 ```
 
-Type vagrant up and wait for a while (i.e. make cup of coffee):
+Goto demoApp and shoot vagrant up (it will take for a while, take a rest and make cup of coffee):
 
 ```
 $ cd demoApp/ && vagrant up
