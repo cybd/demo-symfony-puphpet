@@ -9,7 +9,7 @@ Download and install:
 * [VirtualBox (v4.3.x)](https://www.virtualbox.org/wiki/Download_Old_Builds_4_3)
 * [Vagrant](https://www.vagrantup.com/downloads.html)
 
-Clone this repo into local empty folder:
+Clone this repo:
 
 ```
 $ git clone https://github.com/cybd/demo-symfony-puphpet demoApp
