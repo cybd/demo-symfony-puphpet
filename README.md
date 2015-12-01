@@ -6,7 +6,8 @@ It is a good way (I think) to [start learning Symfony framework](http://symfony.
 
 Download and install:
 
-* [VirtualBox (v4.3.x)](https://www.virtualbox.org/wiki/Download_Old_Builds_4_3)
+* [VirtualBox (v5.0.x)](https://www.virtualbox.org/wiki/Downloads)
+* [Software Developer Kit (SDK) for VirtualBox](http://download.virtualbox.org/virtualbox/5.0.10/VirtualBoxSDK-5.0.10-104061.zip)
 * [Vagrant](https://www.vagrantup.com/downloads.html)
 
 Clone this repo:
@@ -46,7 +47,7 @@ $ vagrant plugin install vagrant-winnfsd
 
 1 CPU, 512 RAM
 
-Ubuntu Trusty 14.04 LTS x64
+Debian Wheezy 7 x64
 
 nginx (demo.sf.local)
 
