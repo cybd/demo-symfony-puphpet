@@ -1,8 +1,8 @@
 vagrantfile:
     target: local
     vm:
-        box: puphpet/ubuntu1404-x64
-        box_url: puphpet/ubuntu1404-x64
+        box: puphpet/debian75-x64
+        box_url: puphpet/debian75-x64
         hostname: sf.local
         memory: '512'
         cpus: '1'
@@ -10,7 +10,7 @@ vagrantfile:
         network:
             private_network: 192.168.56.101
             forwarded_port:
-                vflnp_mww2h8kwhwyq:
+                vflnp_jcvgjey75mvv:
                     host: '6836'
                     guest: '22'
         post_up_message: ''
@@ -33,7 +33,7 @@ vagrantfile:
                     - '--hiera_config /vagrant/puphpet/puppet/hiera.yaml'
                     - '--parser future'
         synced_folder:
-            vflsf_za02cb7k3pbu:
+            vflsf_osg2yy3uq25o:
                 source: ./
                 target: /var/www
                 sync_type: nfs
@@ -65,6 +65,7 @@ vagrantfile:
         forward_agent: false
         forward_x11: false
         shell: 'bash -l'
+        insert_key: false
     vagrant:
         host: detect
 server:
@@ -94,9 +95,13 @@ nginx:
         default_vhost: 1
         proxy_buffer_size: 128k
         proxy_buffers: '4 256k'
+        proxy_connect_timeout: 600s
+        proxy_send_timeout: 600s
+        proxy_read_timeout: 600s
+        names_hash_bucket_size: 128
     upstreams: {  }
     vhosts:
-        nxv_esetv56mindt:
+        nxv_aadwcc7l4ngk:
             server_name: demo.sf.local
             www_root: /var/www/html/demo/web
             listen_port: '80'
@@ -110,7 +115,7 @@ nginx:
             rewrite_to_https: '1'
             spdy: '1'
             locations:
-                nxvl_747nwe5cy7lk:
+                nxvl_fcqcn9r7dx5i:
                     location: /
                     autoindex: 'off'
                     internal: false
@@ -120,7 +125,7 @@ nginx:
                     fastcgi: ''
                     fastcgi_index: ''
                     fastcgi_split_path: ''
-                nxvl_jb8dxltjw19a:
+                nxvl_67f50l41ijfx:
                     location: '~ ^/(app_dev|config)\.php(/|$)'
                     autoindex: 'off'
                     internal: false
@@ -129,7 +134,7 @@ nginx:
                     fastcgi_split_path: '^(.+\.php)(/.*)$'
                     fast_cgi_params_extra:
                         - 'SCRIPT_FILENAME $request_filename'
-                nxvl_9gtakia38l1u:
+                nxvl_yi5jeu85zqmf:
                     location: '~ ^/app\.php(/|$)'
                     autoindex: 'off'
                     internal: 'false'
@@ -152,7 +157,7 @@ apache:
         - proxy_fcgi
         - rewrite
     vhosts:
-        av_y0ps1j098v5v:
+        av_bs0gwwyh30br:
             servername: awesome.dev
             serveraliases:
                 - www.awesome.dev
@@ -169,7 +174,7 @@ apache:
             ssl_protocol: ''
             ssl_cipher: ''
             directories:
-                avd_wvpvqf4i80ku:
+                avd_2nht17hvxqen:
                     path: /var/www/awesome
                     options:
                         - Indexes
@@ -181,7 +186,7 @@ apache:
                         - 'all granted'
                     custom_fragment: ''
                     files_match:
-                        avdfm_ccihfb0mwou4:
+                        avdfm_65gcpc62x1ib:
                             path: \.php$
                             sethandler: 'proxy:fcgi://127.0.0.1:9000'
                             custom_fragment: ''
@@ -206,7 +211,7 @@ php:
     fpm_ini:
         error_log: /var/log/php-fpm.log
     fpm_pools:
-        phpfp_r1r4303sbp0u:
+        phpfp_u193erif9seq:
             ini:
                 prefix: www
                 listen: '127.0.0.1:9000'
