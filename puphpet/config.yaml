@@ -98,7 +98,7 @@ nginx:
     vhosts:
         nxv_esetv56mindt:
             server_name: demo.sf.local
-            www_root: /var/www/site/demo/web
+            www_root: /var/www/html/demo/web
             listen_port: '80'
             client_max_body_size: 1m
             ssl: '0'
