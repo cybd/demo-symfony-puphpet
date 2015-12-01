@@ -277,22 +277,22 @@ hhvm:
         error_reporting: '-1'
         date.timezone: UTC
 mysql:
-    install: '0'
+    install: '1'
     settings:
         version: '5.6'
-        root_password: '123'
+        root_password: root
         override_options: {  }
     adminer: 0
     users:
-        mysqlnu_2c29m61ym7c9:
+        mysqlnu_q4fg4cx6hesb:
             name: dbuser
-            password: '123'
+            password: dbuser
     databases:
-        mysqlnd_1pg6ce9l7gtl:
-            name: dbname
+        mysqlnd_p4wwcvnlqyzm:
+            name: comments
             sql: ''
     grants:
-        mysqlng_yfhlvkpto1r6:
+        mysqlng_iru62mqos8qb:
             user: dbuser
             table: '*.*'
             privileges:
