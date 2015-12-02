@@ -35,6 +35,6 @@ class CommentType extends BaseCommentType
 
     public function getName()
     {
-        return 'my_comments';
+        return 'comment';
     }
 }

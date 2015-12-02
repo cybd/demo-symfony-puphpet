@@ -15,10 +15,9 @@ class DefaultController extends Controller
      */
     public function indexAction(Request $request)
     {
-        $form = $this->createForm(
-            new CommentType('AppBundle\Entity\Comment'),
-            new Comment
-        );
+        $comment = new Comment();
+
+        $form = $this->createForm('comment', $comment);
 
         $form->handleRequest($request);
 
