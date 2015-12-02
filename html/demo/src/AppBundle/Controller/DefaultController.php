@@ -23,6 +23,9 @@ class DefaultController extends Controller
 
         if ($form->isValid()) {
             // save data into database
+            $em = $this->getDoctrine()->getManager();
+            $em->persist($comment);
+            $em->flush();
 
 //            return $this->redirectToRoute('comment_success');
         }
