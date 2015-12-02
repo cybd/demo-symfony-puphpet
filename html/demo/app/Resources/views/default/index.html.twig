@@ -5,6 +5,11 @@
         <div id="container">
 
             hello
+            {{ form_start(form) }}
+            {{ form_widget(form) }}
+            {{ form_end(form) }}
+
+
             {% include 'FOSCommentBundle:Thread:async.html.twig' with {'id': 'foo'} %}
 
         </div>

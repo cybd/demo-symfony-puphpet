@@ -33,4 +33,46 @@ class Comment extends BaseComment
      * @ORM\ManyToOne(targetEntity="AppBundle\Entity\Thread")
      */
     protected $thread;
+
+    /**
+     * @ORM\Column(type="string", length=64)
+     */
+    protected $email;
+
+    /**
+     * @ORM\Column(type="string", length=64)
+     */
+    protected $authorName;
+
+    /**
+     * @return mixed
+     */
+    public function getAuthorName()
+    {
+        return $this->authorName ?: 'Anonymous';
+    }
+
+    /**
+     * @param mixed $authorName
+     */
+    public function setAuthorName($authorName)
+    {
+        $this->authorName = $authorName;
+    }
+
+    /**
+     * @return string
+     */
+    public function getEmail()
+    {
+        return $this->email;
+    }
+
+    /**
+     * @param string $email
+     */
+    public function setEmail($email)
+    {
+        $this->email = $email;
+    }
 }
