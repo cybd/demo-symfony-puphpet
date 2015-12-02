@@ -15,16 +15,21 @@ class DefaultController extends Controller
     public function indexAction(Request $request)
     {
         $comment = new Comment();
-        $comment->setAuthorName('newName');
 
         $form = $this->createFormBuilder($comment)
-            ->add('email', 'text')
-            ->add('authorName', 'text')
-            ->add('body', 'text')
+            ->add('email', 'email', array('label' => 'Your email:'))
+            ->add('authorName', 'text', array('label' => 'Your name:'))
+            ->add('body', 'textarea', array('label' => 'Your message:'))
             ->add('save', 'submit', array('label' => 'Add comment'))
             ->getForm();
 
+        $form->handleRequest($request);
 
+        if ($form->isValid()) {
+            // save data into database
+
+//            return $this->redirectToRoute('comment_success');
+        }
 
         // replace this example code with whatever you need
         return $this->render('default/index.html.twig', array(

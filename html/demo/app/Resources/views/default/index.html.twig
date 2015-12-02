@@ -6,7 +6,29 @@
 
             hello
             {{ form_start(form) }}
-            {{ form_widget(form) }}
+                {{ form_errors(form) }}
+
+            <div>
+                {{ form_label(form.email) }}
+                {{ form_errors(form.email) }}
+                {{ form_widget(form.email) }}
+            </div>
+
+            <div>
+                {{ form_label(form.authorName) }}
+                {{ form_errors(form.authorName) }}
+                {{ form_widget(form.authorName) }}
+            </div>
+
+            <div>
+                {{ form_label(form.body) }}
+                {{ form_errors(form.body) }}
+                {{ form_widget(form.body) }}
+            </div>
+
+            <div>
+                {{ form_widget(form.save) }}
+            </div>
             {{ form_end(form) }}
 
 
