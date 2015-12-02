@@ -2,6 +2,7 @@
 
 namespace AppBundle\Controller;
 
+use AppBundle\Form\Type\CommentType;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
@@ -14,14 +15,10 @@ class DefaultController extends Controller
      */
     public function indexAction(Request $request)
     {
-        $comment = new Comment();
-
-        $form = $this->createFormBuilder($comment)
-            ->add('email', 'email', array('label' => 'Your email:'))
-            ->add('authorName', 'text', array('label' => 'Your name:'))
-            ->add('body', 'textarea', array('label' => 'Your message:'))
-            ->add('save', 'submit', array('label' => 'Add comment'))
-            ->getForm();
+        $form = $this->createForm(
+            new CommentType('AppBundle\Entity\Comment'),
+            new Comment
+        );
 
         $form->handleRequest($request);
 
