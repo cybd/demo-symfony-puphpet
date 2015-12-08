@@ -6,8 +6,8 @@ It is a good way (I think) to [start learning Symfony framework](http://symfony.
 
 Download and install:
 
-* [VirtualBox (v5.0.x)](https://www.virtualbox.org/wiki/Downloads)
-* [Software Developer Kit (SDK) for VirtualBox](http://download.virtualbox.org/virtualbox/5.0.10/VirtualBoxSDK-5.0.10-104061.zip)
+* [VirtualBox (v4.3.x)](https://www.virtualbox.org/wiki/Download_Old_Builds_4_3) — still using old version due to performance penalties (Windows only) on v5.10 in console
+* [Software Developer Kit (SDK) for VirtualBox](http://download.virtualbox.org/virtualbox/4.3.34/Oracle_VM_VirtualBox_Extension_Pack-4.3.34-104062.vbox-extpack)
 * [Vagrant](https://www.vagrantup.com/downloads.html)
 
 Clone this repo:
