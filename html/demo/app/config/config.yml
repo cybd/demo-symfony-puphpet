@@ -38,6 +38,9 @@ twig:
 
 # FOSCommentBundle Configuration
 fos_comment:
+    form:
+        comment:
+            type: comment
     db_driver: orm
     class:
         model:
