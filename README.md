@@ -55,6 +55,8 @@ NFS shared folder
 
 PHP 5.6 (cli, intl, mcrypt, xdebug, composer)
 
+MySQL 5.6
+
 SQLite
 
 **Happy coding!**
