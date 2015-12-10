@@ -1,3 +1,9 @@
 app:
     resource: "@AppBundle/Controller/"
     type:     annotation
+
+fos_comment_api:
+    type: reset
+    resource: "@FOSCommentBundle/Resources/config/routing.yml"
+    prefix: /api
+    defaults: { _format: html }
