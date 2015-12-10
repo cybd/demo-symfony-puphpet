@@ -4,9 +4,9 @@
 parameters:
     database_host:     127.0.0.1
     database_port:     ~
-    database_name:     symfony
-    database_user:     root
-    database_password: ~
+    database_name:     comments
+    database_user:     dbuser
+    database_password: dbuser
     # You should uncomment this if you want use pdo_sqlite
     # database_path: "%kernel.root_dir%/data.db3"
 
@@ -16,4 +16,4 @@ parameters:
     mailer_password:   ~
 
     # A secret key that's used to generate certain security-related tokens
-    secret:            ThisTokenIsNotSoSecretChangeIt
+    secret:            b266838b049e9d15933beb8b74da25f5acc0e0a6
