@@ -1,6 +1,6 @@
 # README #
 
-Ready-made development environment for [Symfony demo application](http://symfony.com/blog/introducing-the-symfony-demo-application). Just clone and vagrant up ^)
+Ready-made development environment for Symfony 2.7.7 BULK application with MySQL configured database.
 
 It is a good way (I think) to [start learning Symfony framework](http://symfony.com/doc/current/book/page_creation.html).
 
