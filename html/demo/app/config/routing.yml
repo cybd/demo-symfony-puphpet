@@ -3,7 +3,7 @@ app:
     type:     annotation
 
 fos_comment_api:
-    type: reset
+    type: rest
     resource: "@FOSCommentBundle/Resources/config/routing.yml"
     prefix: /api
     defaults: { _format: html }
