@@ -38,6 +38,9 @@ twig:
 
 fos_comment:
     db_driver: orm
+    form:
+        comment:
+            type: comment
     class:
         model:
             comment: AppBundle\Entity\Comment

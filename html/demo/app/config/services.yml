@@ -4,6 +4,10 @@ parameters:
 #    parameter_name: value
 
 services:
+    app.form.type.comment:
+        class: AppBundle\Form\Type\CommentType
+        arguments: [ 'AppBundle\Form\Type\CommentType' ]
+        tags: [{ name: form.type, alias: comment }]
 #    service_name:
 #        class: AppBundle\Directory\ClassName
 #        arguments: ["@another_service_name", "plain_value", "%parameter_name%"]
