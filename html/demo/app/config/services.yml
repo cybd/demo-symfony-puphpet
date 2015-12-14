@@ -4,6 +4,9 @@ parameters:
 #    parameter_name: value
 
 services:
+    app.form.type.task:
+        class: AppBundle\Form\Type\TaskType
+        tags: [{ name: form.type, alias: task }]
 #    service_name:
 #        class: AppBundle\Directory\ClassName
 #        arguments: ["@another_service_name", "plain_value", "%parameter_name%"]

@@ -20,7 +20,7 @@ class DefaultController extends Controller
         $task->setTask('Write a blog post');
         $task->setDueDate(new \DateTime('tomorrow'));
 
-        $form = $this->createForm(new TaskType(), $task);
+        $form = $this->createForm('task', $task);
 
         $form->handleRequest($request);
 
