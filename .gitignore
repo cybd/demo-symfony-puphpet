@@ -1,4 +1,5 @@
-/.idea/
+.DS_Store
+.idea/
 /.vagrant/
 puphpet/files/dot/ssh/id_rsa
 puphpet/files/dot/ssh/id_rsa.ppk
