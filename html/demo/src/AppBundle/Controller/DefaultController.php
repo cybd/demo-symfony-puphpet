@@ -3,6 +3,7 @@
 namespace AppBundle\Controller;
 
 use AppBundle\Entity\Task;
+use AppBundle\Form\Type\TaskType;
 use Doctrine\DBAL\Types\DateType;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
@@ -19,11 +20,7 @@ class DefaultController extends Controller
         $task->setTask('Write a blog post');
         $task->setDueDate(new \DateTime('tomorrow'));
 
-        $form = $this->createFormBuilder($task)
-            ->add('task', 'text', array('label' => 'Text for task: '))
-            ->add('dueDate', 'date', array('widget' => 'single_text', 'label' => 'Task due date: '))
-            ->add('save', 'submit', array('label' => 'Create task'))
-            ->getForm();
+        $form = $this->createForm(new TaskType(), $task);
 
         $form->handleRequest($request);
 
