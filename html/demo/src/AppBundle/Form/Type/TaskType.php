@@ -8,6 +8,7 @@
 
 namespace AppBundle\Form\Type;
 
+use Gregwar\CaptchaBundle\Type\CaptchaType;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
@@ -19,6 +20,7 @@ class TaskType extends AbstractType
         $builder
             ->add('task', 'text', array('label' => 'Text for task: '))
             ->add('dueDate', 'date', array('widget' => 'single_text', 'label' => 'Task due date: '))
+            ->add('captcha', CaptchaType::class)
             ->add('save', 'submit', array('label' => 'Create task'))
         ;
     }
