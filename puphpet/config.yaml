@@ -201,6 +201,7 @@ php:
             - cli
             - intl
             - mcrypt
+            - gd
         pear: {  }
         pecl: {  }
     ini:
