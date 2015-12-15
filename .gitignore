@@ -14,3 +14,4 @@ puphpet/files/dot/ssh/root_id_rsa.pub
 /html/demo/app/logs/
 /html/demo/app/config/parameters.yml
 /html/demo/web/js/
+/html/demo/web/css/
