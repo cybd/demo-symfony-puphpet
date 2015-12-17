@@ -1,6 +1,9 @@
 # README #
 
-Ready-made development environment for Symfony 2.7.7 BULK application with MySQL configured database.
+Ready-made development environment for Symfony 2.7.7 application with MySQL configured database.
+Installed bundles:
+* FOSCommentBundle
+* GregwarCaptchaBundle
 
 It is a good way (I think) to [start learning Symfony framework](http://symfony.com/doc/current/book/page_creation.html).
 
