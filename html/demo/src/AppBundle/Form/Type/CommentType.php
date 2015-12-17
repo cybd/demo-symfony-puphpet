@@ -21,6 +21,7 @@ class CommentType extends BaseCommentType
         $builder
             ->add('email', 'email', array('label' => 'Your email:'))
             ->add('authorName', 'text', array('label' => 'Your name:'))
+            ->add('captcha', 'captcha')
         ;
     }
 
