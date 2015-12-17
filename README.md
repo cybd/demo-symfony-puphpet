@@ -1,6 +1,7 @@
 # README #
 
 Ready-made development environment for Symfony 2.7.7 application with MySQL configured database.
+
 Installed bundles:
 * FOSCommentBundle
 * GregwarCaptchaBundle
