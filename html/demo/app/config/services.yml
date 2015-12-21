@@ -8,6 +8,10 @@ services:
         class: AppBundle\Form\Type\CommentType
         arguments: [ 'AppBundle\Form\Type\CommentType' ]
         tags: [{ name: form.type, alias: comment }]
+
+    markup.my_parser:
+        class: AppBundle\Service\MyParser
+
 #    service_name:
 #        class: AppBundle\Directory\ClassName
 #        arguments: ["@another_service_name", "plain_value", "%parameter_name%"]

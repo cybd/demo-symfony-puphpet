@@ -10,6 +10,7 @@ namespace AppBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 use FOS\CommentBundle\Entity\Comment as BaseComment;
+use FOS\CommentBundle\Model\RawCommentInterface;
 
 /**
  * @ORM\Entity
@@ -17,7 +18,7 @@ use FOS\CommentBundle\Entity\Comment as BaseComment;
  * Class Comment
  * @package AppBundle\Entity
  */
-class Comment extends BaseComment
+class Comment extends BaseComment implements RawCommentInterface
 {
     /**
      * @ORM\Id
@@ -41,6 +42,12 @@ class Comment extends BaseComment
      * @ORM\Column(type="string", length=64)
      */
     protected $authorName;
+
+    /**
+     * @ORM\Column(name="rawBody", type="text", nullable=true)
+     * @var string
+     */
+    protected $rawBody;
 
     /**
      * @return mixed
@@ -72,6 +79,22 @@ class Comment extends BaseComment
     public function setAuthorName($authorName)
     {
         $this->authorName = $authorName;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getRawBody()
+    {
+        return $this->rawBody;
+    }
+
+    /**
+     * @param mixed $rawBody
+     */
+    public function setRawBody($rawBody)
+    {
+        $this->rawBody = $rawBody;
     }
 
 }

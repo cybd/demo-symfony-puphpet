@@ -45,6 +45,8 @@ fos_comment:
         model:
             comment: AppBundle\Entity\Comment
             thread: AppBundle\Entity\Thread
+    service:
+        markup: markup.my_parser
 
 # Assetic Configuration
 assetic:
